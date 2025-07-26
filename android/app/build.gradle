@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace "com.example.ecommerce_app"
+    namespace "com.dzshoping.dzshoping"
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.ecommerce_app"
+        applicationId "com.dzshoping.dzshoping"
         minSdk 21
         targetSdk 34
         versionCode flutterVersionCode.toInteger()
