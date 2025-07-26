@@ -1,0 +1,15 @@
+{
+  "app_title": "My Store",
+  "welcome": "Welcome",
+  "cart": "Cart",
+  "profile": "Profile",
+  "balance": "Balance",
+  "logout": "Logout",
+  "login": "Login",
+  "email": "Email",
+  "password": "Password",
+  "language": "Language",
+  "admin_panel": "Admin Panel",
+  "products": "Products",
+  "orders": "Orders"
+}

@@ -1,0 +1,40 @@
+name: ecommerce_store
+description: تطبيق متجر إلكتروني باستخدام Flutter و Firebase
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  firebase_core: ^2.25.4
+  firebase_auth: ^4.17.4
+  cloud_firestore: ^4.15.4
+  firebase_messaging: ^14.7.14
+  firebase_storage: ^11.7.4
+  flutter_local_notifications: ^17.1.2
+  provider: ^6.1.2
+  shared_preferences: ^2.2.3
+  intl: ^0.18.1
+  flutter_svg: ^2.0.10+1
+  google_fonts: ^6.2.1
+  fluttertoast: ^8.2.5
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/images/
+    - assets/translations/
