@@ -28,7 +28,23 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 40),
-              buildMenuButton(context, 'Go to Admin Panel', Icons.admin_panel_settings, '/admin'),
+
+              // زر لوحة تحكم الأدمن
+              buildMenuButton(
+                context,
+                'Go to Admin Panel',
+                Icons.admin_panel_settings,
+                '/admin',
+              ),
+
+              // زر لوحة تحكم المستخدم
+              buildMenuButton(
+                context,
+                'Go to User Dashboard',
+                Icons.account_circle,
+                '/user',
+              ),
+
               buildMenuButton(context, 'Login', Icons.login, '/login'),
               buildMenuButton(context, 'Sign Up', Icons.person_add, '/signup'),
               buildMenuButton(context, 'Cart', Icons.shopping_bag, '/cart'),
@@ -39,7 +55,8 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  Widget buildMenuButton(BuildContext context, String text, IconData icon, String route) {
+  Widget buildMenuButton(
+      BuildContext context, String text, IconData icon, String route) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 8.0),
       child: ElevatedButton.icon(

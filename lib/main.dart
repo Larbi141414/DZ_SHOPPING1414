@@ -5,7 +5,7 @@ import 'screens/admin/admin_dashboard.dart';
 import 'screens/auth/login_screen.dart';
 import 'screens/auth/signup_screen.dart';
 import 'screens/cart/cart_screen.dart';
-
+import 'screens/user/user_dashboard.dart';
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
@@ -13,6 +13,7 @@ void main() {
     home: const HomeScreen(),
     routes: {
       '/admin': (context) => AdminDashboard(),
+      '/user': (context) => const UserDashboard(),
       '/login': (context) => const LoginScreen(),
       '/signup': (context) => const SignupScreen(),
       '/cart': (context) => const CartScreen(),
