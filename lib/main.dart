@@ -12,7 +12,7 @@ void main() {
     theme: AppTheme.lightTheme,
     home: const HomeScreen(),
     routes: {
-      '/admin': (context) => const AdminDashboard(),
+      '/admin': (context) => AdminDashboard(),
       '/login': (context) => const LoginScreen(),
       '/signup': (context) => const SignupScreen(),
       '/cart': (context) => const CartScreen(),
