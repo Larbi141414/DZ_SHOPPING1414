@@ -1,46 +1,22 @@
+import 'product.dart';
+
 class ProductModel {
-  final String id;
-  final String name;
-  final String description;
-  final String image;
-  final num price;
-  final String category;
-  final bool isAliExpress;
-  final String? aliExpressLink;
-
-  ProductModel({
-    required this.id,
-    required this.name,
-    required this.description,
-    required this.image,
-    required this.price,
-    required this.category,
-    required this.isAliExpress,
-    this.aliExpressLink,
-  });
-
-  factory ProductModel.fromMap(Map<String, dynamic> map, String documentId) {
-    return ProductModel(
-      id: documentId,
-      name: map['name'] ?? '',
-      description: map['description'] ?? '',
-      image: map['image'] ?? '',
-      price: map['price'] ?? 0,
-      category: map['category'] ?? '',
-      isAliExpress: map['isAliExpress'] ?? false,
-      aliExpressLink: map['aliExpressLink'],
-    );
-  }
-
-  Map<String, dynamic> toMap() {
-    return {
-      'name': name,
-      'description': description,
-      'image': image,
-      'price': price,
-      'category': category,
-      'isAliExpress': isAliExpress,
-      'aliExpressLink': aliExpressLink,
-    };
-  }
+  static List<Product> products = [
+    Product(
+      id: '1',
+      name: 'Smart Watch',
+      imageUrl: 'https://ae01.alicdn.com/kf/Sc1.jpg',
+      price: 3500, // السعر الذي تضعه أنت
+      originalUrl: 'https://www.aliexpress.com/item/123456.html',
+      originalPrice: 20, // بالدولار مثلا
+    ),
+    Product(
+      id: '2',
+      name: 'Wireless Earbuds',
+      imageUrl: 'https://ae01.alicdn.com/kf/S2.jpg',
+      price: 2500,
+      originalUrl: 'https://www.aliexpress.com/item/987654.html',
+      originalPrice: 15,
+    ),
+  ];
 }
