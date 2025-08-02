@@ -6,10 +6,17 @@ plugins {
 }
 
 android {
+<<<<<<< HEAD
     namespace = "com.dzshoping.dzshoping"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
     ndkVersion "27.0.12077973"
+=======
+    namespace = "com.example.dz_shoping"
+    compileSdk = flutter.compileSdkVersion
+    ndkVersion = flutter.ndkVersion
+
+>>>>>>> 7bee6cb7fb3f02d97e350d9f59ea00a13815abfa
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -21,7 +28,11 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+<<<<<<< HEAD
         applicationId = "com.dzshoping.dzshoping"
+=======
+        applicationId = "com.example.dz_shoping"
+>>>>>>> 7bee6cb7fb3f02d97e350d9f59ea00a13815abfa
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion

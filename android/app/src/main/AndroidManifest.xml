@@ -1,6 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
+<<<<<<< HEAD
         android:label="ecommerce_store"
+=======
+        android:label="dz_shoping"
+>>>>>>> 7bee6cb7fb3f02d97e350d9f59ea00a13815abfa
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

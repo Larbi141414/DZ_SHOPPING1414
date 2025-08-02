@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -66,3 +67,27 @@ class _MyStoreAppState extends State<MyStoreApp> {
     );
   }
 }
+=======
+import 'package:flutter/material.dart';
+import 'theme/app_theme.dart';
+import 'screens/home/home_screen.dart';
+import 'screens/admin/admin_dashboard.dart';
+import 'screens/auth/login_screen.dart';
+import 'screens/auth/signup_screen.dart';
+import 'screens/cart/cart_screen.dart';
+import 'screens/user/user_dashboard.dart';
+void main() {
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    theme: AppTheme.lightTheme,
+    home: const HomeScreen(),
+    routes: {
+      '/admin': (context) => AdminDashboard(),
+      '/user': (context) => const UserDashboard(),
+      '/login': (context) => const LoginScreen(),
+      '/signup': (context) => const SignupScreen(),
+      '/cart': (context) => const CartScreen(),
+    },
+  ));
+}
+>>>>>>> 7bee6cb7fb3f02d97e350d9f59ea00a13815abfa

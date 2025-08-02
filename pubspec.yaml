@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 name: ecommerce_store
 description: تطبيق متجر إلكتروني باستخدام Flutter و Firebase
 publish_to: 'none'
@@ -5,10 +6,21 @@ version: 1.0.0+1
 
 environment:
   sdk: '>=3.1.0 <4.0.0'
+=======
+name: dz_shoping
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+>>>>>>> 7bee6cb7fb3f02d97e350d9f59ea00a13815abfa
 
 dependencies:
   flutter:
     sdk: flutter
+<<<<<<< HEAD
 
   cupertino_icons: ^1.0.2
   firebase_core: ^2.25.4
@@ -25,10 +37,14 @@ dependencies:
   fluttertoast: ^8.2.5
   flutter_localizations:
     sdk: flutter
+=======
+  cupertino_icons: ^1.0.8
+>>>>>>> 7bee6cb7fb3f02d97e350d9f59ea00a13815abfa
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+<<<<<<< HEAD
   flutter_lints: ^3.0.0
 
 flutter:
@@ -38,3 +54,11 @@ flutter:
     - assets/icons/
     - assets/images/
     - assets/translations/
+=======
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/bg.jpg
+>>>>>>> 7bee6cb7fb3f02d97e350d9f59ea00a13815abfa
